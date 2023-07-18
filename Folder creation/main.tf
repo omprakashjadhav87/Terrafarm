@@ -27,6 +27,6 @@ provider "local" {
 #=================================================================================#
 
 resource "local_file" "om.text" {
-    filename = "/temp/terra.txt"
+    filename = "/temp/om.txt"
   
 }
