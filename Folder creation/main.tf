@@ -26,7 +26,7 @@ provider "local" {
 
 #=================================================================================#
 
-resource "local_file" "om.text" {
+resource "local_file" "om.text1" {
     filename = "/temp/om.txt"
   
 }
