@@ -27,7 +27,9 @@ provider "local" {
 #=================================================================================#
 
 resource "local_file" "om_text1" {
-    filename = "/temp/om.txt"
-    content = "Hi Omprakash this folder creation using terraform"
+    filename                                = "/temp/terracode/om.txt"
+    content                                 = "Hi Omprakash this folder creation using terraform"
+    file_permission                         = "0700"
+    directory_permission                    = "0700"
   
 }
