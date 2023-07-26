@@ -34,7 +34,7 @@ resource "local_file" "Generic_txt_file1" {
   
 }
 
-resource "local_file" "Generic_txt_file1" {
+resource "local_file" "Generic_txt_file2" {
 filename = "/mnt/om.txt"
 content = "hi terraform team"
 }
