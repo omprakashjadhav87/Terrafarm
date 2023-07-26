@@ -33,3 +33,8 @@ resource "local_file" "om_text1" {
     directory_permission                    = "0700"
   
 }
+
+resource "local_file" "om_text1" {
+filename = "/mnt/om.txt"
+content = "hi terraform team"
+}
