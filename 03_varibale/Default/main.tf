@@ -1,3 +1,5 @@
+#
+#
 terraform {
   required_providers {
     aws = {
@@ -12,11 +14,13 @@ provider "aws" {
 }
 
 resource "local_file" "Geniric_hardcoded_file1" {
-  content  = "Welcome to Terraforam lab"
+  content  = "hi from ip 1.2.3.4.5"
   filename = "/temp/omprakash/file1.txt"
 }
 
 resource "local_file" "Geniric_hardcoded_file2" {
-  content  = Welcome to Terraforam lab
-  filename = /temp/omprakash/file2.txt
+  key =value
+  filename =var.filename
+  content   =var.content
+
 }
