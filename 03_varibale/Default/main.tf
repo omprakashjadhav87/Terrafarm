@@ -14,13 +14,13 @@ provider "aws" {
 }
 
 resource "local_file" "Geniric_hardcoded_file1" {
-  content  = "hi from ip 1.2.3.4.5"
+  conent  = "hi from ip 1.2.3.4.5"
   filename = "/temp/omprakash/file1.txt"
 }
 
 resource "local_file" "Geniric_hardcoded_file2" {
   #key           ="value"
   filename      =var.filename
-  conent         =var.conent
+  conent        =var.conent
 
 }
