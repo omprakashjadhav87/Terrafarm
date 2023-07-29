@@ -20,3 +20,14 @@ variable "file_list" {
                        
   
 }
+
+#Declare map variable
+variable "file_map"{
+    type        =map()
+    default = {
+        #"key"= "value"
+        "filename"              ="/mnt/map.txt"
+        "content"               = "this the map file"
+        "file_permission"       = "0777"
+    }
+}
