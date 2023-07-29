@@ -20,7 +20,7 @@ resource "local_file" "Geniric_hardcoded_file1" {
 
 resource "local_file" "Geniric_variable_file2" {
   #key           ="value"
-  filename = var.filename
-  content = var.content
+  filename = var.filename_str
+  content = var.content_str
 
 }
