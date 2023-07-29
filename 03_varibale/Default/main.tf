@@ -24,3 +24,11 @@ resource "local_file" "Geniric_variable_file2" {
   content = var.content_str
 
 }
+
+resource "local_file" "Geniric_list_file2" {
+  #key                  ="value"
+  filename              = var.file_list[0]
+  content               = var.file_list[1]
+  file_permission       = var.file_list[2]
+
+}

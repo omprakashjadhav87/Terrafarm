@@ -11,3 +11,12 @@ variable "content_str" {
     type = string
   
 }
+
+#Declare List variable##
+#List =[]
+variable "file_list" {
+    default                = ["/mnt/list.txt","hi from list", "0777"]
+    type                   = list(string)
+                       
+  
+}
