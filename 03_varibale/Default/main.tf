@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "local_file" "Geniric_hardcoded" {
-  filename = "/temp/file1.txt"
+  filename = "/mnt/hardcoded.txt"
   content  = "hi from ip 1.2.3.4.5"
 }
 

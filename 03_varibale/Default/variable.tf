@@ -1,6 +1,6 @@
 variable "filename_str"{
 
-    default = "/mt/var.text"
+    default = "/mt/str.text"
     description ="this the file name variable"
     type = string 
 }
