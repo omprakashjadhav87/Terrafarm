@@ -23,7 +23,7 @@ variable "file_list" {
 
 #Declare map variable
 variable "file_map"{
-    type        =map()
+    type        =map(string)
     default = {
         #"key"= "value"
         "filename"              ="/mnt/map.txt"
