@@ -22,6 +22,8 @@ variable "file_list" {
 }
 
 #Declare map variable
+#{key="value"}
+#va.file.map["filename"]
 variable "file_map"{
     type        =map(string)
     default = {
