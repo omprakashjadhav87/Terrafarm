@@ -1,5 +1,3 @@
-#
-#
 terraform {
   required_providers {
     aws = {
@@ -9,7 +7,7 @@ terraform {
   }
 }
 
-provider "aws" {
+provider "local" {
   # Configuration options
 }
 #Comand line variable
