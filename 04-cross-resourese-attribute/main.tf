@@ -4,3 +4,7 @@ resource "aws_instance" "generic_ec2"{
     instance_type = "t2.micro"
 
 }
+
+resource "aws_eip" "genric_ec2_eip" {
+
+}
