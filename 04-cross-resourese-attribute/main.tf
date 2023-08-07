@@ -18,3 +18,18 @@ resource "aws_eip_association" "attach_ec2_eip" {
     allocation_id = aws_eip.genric_ec2_eip.allocation_id
 
 }
+
+output "ec2_pub_ip" {
+    value = aws_instance.generic_ec2.public_ip
+  
+}
+
+output "ec_pvt_ip" {
+    value = aws_instance.generic_ec2.private_ip
+  
+}
+
+output "ec_web_link" {
+    value = "https://${aws_instance.generic_ec2.public_ip}:80"
+  
+}
