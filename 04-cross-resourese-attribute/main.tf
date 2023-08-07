@@ -6,6 +6,10 @@ resource "aws_instance" "generic_ec2"{
 }
 
 resource "aws_eip" "genric_ec2_eip" {
+    tags = {
+        "Name"="Test_Server"
+        "owner"="devops"
+    }
 
 }
 
