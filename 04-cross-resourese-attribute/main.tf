@@ -8,3 +8,9 @@ resource "aws_instance" "generic_ec2"{
 resource "aws_eip" "genric_ec2_eip" {
 
 }
+
+resource "aws_eip_association" "attach_ec2_eip" {
+    instance_id = aws_instance.generic_ec2.id
+    allocation_id = aws_eip.genric_ec2_eip.allocation_id
+
+}
