@@ -2,7 +2,7 @@
 #       Create pvt rt                        #
 #--------------------------------------------#
 resource "aws_route_table" "generic_pvt_rt" {
-  vpc_id = aws_vpc.generic_vpc.id
+  vpc_id = aws_vpc.geniric_vpc.id
   tags = {
     "Name"  = "ekrushi_pvt_rt"
     "owner" = "devopsview"
