@@ -1,7 +1,7 @@
 #--------------------------------------------#
 #       Create pvt rt                        #
 #--------------------------------------------#
-./*resource "aws_route_table" "generic_pvt_rt" {
+resource "aws_route_table" "generic_pvt_rt" {
   vpc_id = aws_vpc.generic_vpc.id
   tags = {
     "Name"  = "ekrushi_pvt_rt"
@@ -29,7 +29,7 @@ resource "aws_route_table_association" "generic_pvt_subnet_1_asso" {
 resource "aws_route_table_association" "generic_pvt_subnet_2_asso" {
   route_table_id = aws_route_table.generic_pvt_rt.id
   subnet_id      = aws_subnet.generic_pvt_subnet_2.id
-}*/
+}
 
 #--------------------------------------------#
 #                END                         #

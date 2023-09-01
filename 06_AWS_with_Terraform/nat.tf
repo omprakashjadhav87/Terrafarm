@@ -1,7 +1,7 @@
 #--------------------------------------------#
 #       Create public ip fro nat             #
 #--------------------------------------------#
-./*resource "aws_eip" "nat_ip" {
+resource "aws_eip" "nat_ip" {
   vpc = true
 }
 #--------------------------------------------#
@@ -21,4 +21,4 @@ resource "aws_nat_gateway" "nat_gw" {
 #--------------------------------------------#
 output "ekrushi_dev_natgw_id" {
   value = aws_nat_gateway.nat_gw.id
-}*/
+}
