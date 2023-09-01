@@ -4,5 +4,5 @@ resource "aws_internet_gateway" "geniric_igw" {
     "Name" = "ekrushi-dev-igw"
     "owner" = "devopsview"
 
-  
+    }
 }
