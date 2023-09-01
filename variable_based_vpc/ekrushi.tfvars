@@ -4,7 +4,7 @@ az_list = [ "us-east-1a","us-east-1b" ]
 common_tags = {
   
     "Name"                          = "ekrushi-dev-VPC"
-    "igw_Name"                      = "ekrushi-dev-igw"
+    "igw_name"                      = "ekrushi-dev-igw"
     "pub_subnet_1_name"             = "ekrushi-web_pub_subnet_1a"
     "pub_subnet_1_name"             = "ekrushi-web_pub_subnet_1b"
     "owner"                         = "devopsview"
