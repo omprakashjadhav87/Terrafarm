@@ -7,3 +7,8 @@ resource "aws_vpc" "geniric_vpc" {
   }
   enable_dns_hostnames = true
 }
+
+output "ekrushi_dev_vpc_id" {
+    value = aws_vpc.geniric_vpc.id
+  
+}
