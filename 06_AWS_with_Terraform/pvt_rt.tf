@@ -23,12 +23,12 @@ resource "aws_route" "generic_pvt_rt_igw" {
 #--------------------------------------------#
 resource "aws_route_table_association" "generic_pvt_subnet_1_asso" {
   route_table_id = aws_route_table.generic_pvt_rt.id
-  subnet_id      = aws_subnet.generic_pvt_subnet_1.id
+  subnet_id      = aws_subnet.geniric_pvt_subnet_1.id
 }
 
 resource "aws_route_table_association" "generic_pvt_subnet_2_asso" {
   route_table_id = aws_route_table.generic_pvt_rt.id
-  subnet_id      = aws_subnet.generic_pvt_subnet_2.id
+  subnet_id      = aws_subnet.geniric_pvt_subnet_2.id
 }
 
 #--------------------------------------------#

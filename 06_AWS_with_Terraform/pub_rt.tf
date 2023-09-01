@@ -15,7 +15,7 @@ resource "aws_route_table" "generic_pub_rt" {
 resource "aws_route" "generic_pub_rt_igw" {
   route_table_id         = aws_route_table.generic_pub_rt.id
   destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = aws_internet_gateway.generic_igw.id
+  gateway_id             = aws_internet_gateway.geniric_igw.id
 }
 
 #--------------------------------------------#
@@ -23,12 +23,12 @@ resource "aws_route" "generic_pub_rt_igw" {
 #--------------------------------------------#
 resource "aws_route_table_association" "generic_pub_subnet_1_asso" {
   route_table_id = aws_route_table.generic_pub_rt.id
-  subnet_id      = aws_subnet.generic_pub_subnet_1.id
+  subnet_id      = aws_subnet.geniric_pub_subnet_1.id
 }
 
 resource "aws_route_table_association" "generic_pub_subnet_2_asso" {
   route_table_id = aws_route_table.generic_pub_rt.id
-  subnet_id      = aws_subnet.generic_pub_subnet_2.id
+  subnet_id      = aws_subnet.geniric_pub_subnet_2.id
 }
 
 #--------------------------------------------#
