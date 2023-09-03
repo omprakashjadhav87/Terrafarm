@@ -1,5 +1,5 @@
 resource "aws_security_group" "genericwebserver_sg" {
-    vpc_id = "vpc-086945c958c323de0"
+    vpc_id = data.terraform_remote_state.vpc_details.outputs.ekrushi_dev_vpc_id
     name = "webserver"
     description = "allow web trafic"
     tags = {
