@@ -5,7 +5,8 @@ data "terraform_remote_state" "vpc_details" {
     backend = "s3"
     config = {
       bucket = "terraform-prac-test012"
-      key = "vpc/vpc.tfstate"
+      workspace_key_prefix = "ec2"
+    key                  = "webserver_docker.tfstate"
       region = "us-east-1"
       profile = "default"
     }
