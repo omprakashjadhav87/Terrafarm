@@ -4,8 +4,8 @@
 data "terraform_remote_state" "vpc_details" {
     backend = "s3"
     config = {
-      bucket = "terraform-prac-test0124"
-      key = "vpc/terraform.tfstate"
+      bucket = "terraform-prac-test012"
+      key = "vpc/vpc.tfstate"
       region = "us-east-1"
       profile = "default"
     }
