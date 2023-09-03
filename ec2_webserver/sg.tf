@@ -9,7 +9,7 @@ resource "aws_security_group" "webserver_sg" {
   
 }
 
-egress{
+egress={
     from_port =0
     to_prt    =0
     protocol  ="-1"
