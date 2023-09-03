@@ -4,7 +4,7 @@ resource "aws_instance" "ec2_webserver" {
     instance_type = "t2.micro"
     security_groups = [ "sg-029ec7eac094543e3" ]
     tags = {
-        "Name"="web_ec2_sever"
+        "Name"="docker_ec2_sever"
     }
   
 }

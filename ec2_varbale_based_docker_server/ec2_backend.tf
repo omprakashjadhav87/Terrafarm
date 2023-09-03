@@ -1,3 +1,7 @@
+########################        #
+####  Store state in s3        ##
+#################################
+
 terraform {
   backend "s3" {
     bucket = "terraform-prac-test0124"
