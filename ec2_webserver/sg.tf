@@ -21,10 +21,17 @@ resource "aws_security_group" "genericwebserver_sg" {
         cidr_blocks =["0.0.0.0/0"]
     }
     ingress {
-        description  ="allow web trafic on 22 port"
+        description  ="allow ssh trafic on 22 port"
         from_port = 22
         to_port    = 22
         protocol  ="tcp"
-        cidr_blocks =["0.0.0.0/0"]
+        self = true
+    }
+    ingress {
+        description  ="allow all internal  trafic for this same sg"
+        from_port = 0
+        to_port    = 0
+        protocol  ="-1"
+       security_groups = ["sg-059a7afffdb7f4ed8"]
     }
 }
