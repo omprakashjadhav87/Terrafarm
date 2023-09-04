@@ -33,3 +33,8 @@ variable "sg_name" {
 variable "description" {
   
 }
+
+variable "sg_tags" {
+    type = map(string)
+  
+}

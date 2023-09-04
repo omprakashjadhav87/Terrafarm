@@ -1,9 +1,9 @@
 resource "aws_security_group" "genericwebserver_sg" {
     vpc_id = data.terraform_remote_state.vpc_details.outputs.ekrushi_dev_vpc_id
     name = var.sg_name
-    description = "allow web trafic"
+    description = var.description
     tags = {
-        "Name" ="webserver_sg"
+        "Name" =var.sg_tags["Name"]
 
     }
   
