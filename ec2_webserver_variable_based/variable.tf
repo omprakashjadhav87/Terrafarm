@@ -23,3 +23,10 @@ variable "iam_role" {
     type = string
   
 }
+
+/*variable for SG */
+
+variable "sg_name" {
+    type = string
+  
+}
