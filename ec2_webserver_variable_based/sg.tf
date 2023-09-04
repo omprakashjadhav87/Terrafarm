@@ -34,7 +34,7 @@ resource "aws_security_group" "genericwebserver_sg" {
     for_each = var.sg_port
     iterator = Rule_port
     content {
-      description  ="allow access on port ${rule_port.value}"
+      description  ="sg for httpd webserver${rule_port.value}"
         from_port = rule_port.value
         to_port    = rule_port.value
         protocol  ="tcp"
