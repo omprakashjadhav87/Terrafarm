@@ -16,3 +16,10 @@ ebs_volume = {
 }
 
 iam_role = "ec2-s3-read-access-role"
+
+sg_name = "webserver_httpd_sg"
+description ="sg for httpd webserver"
+sg_tags ={
+    "Name"  ="webserver_httpd_sg"
+}
+sg_port =[22,80,90,100]

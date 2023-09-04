@@ -13,27 +13,33 @@ resource "aws_security_group" "genericwebserver_sg" {
     protocol  ="-1"
     cidr_blocks =["0.0.0.0/0"]
 }
-    ingress {
+    /*ingress {
         description  ="allow web trafic on 80 port"
         from_port = 80
         to_port    = 80
         protocol  ="tcp"
         cidr_blocks =["0.0.0.0/0"]
-    }
-    ingress {
+    }*/
+    /*ingress {
         description  ="allow all inside trafic"
         from_port = 0
         to_port    = 0
         protocol  ="-1"
         self = true
-    }
+    }*/
 
-        ingress {
-        description  ="allow ssh access on port 22"
-        from_port = 22
-        to_port    = 22
+ /*inbond Rule */
+
+ dynamic "ingress" {
+    for_each = var.sg_port
+    iterator = Rule_port
+    content {
+      description  ="allow access on port ${rule_port.value}"
+        from_port = rule_port.value
+        to_port    = rule_port.value
         protocol  ="tcp"
         cidr_blocks = ["0.0.0.0/0"]
+        
     }
-
+ }
 }
