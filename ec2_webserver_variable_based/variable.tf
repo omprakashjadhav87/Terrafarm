@@ -38,3 +38,8 @@ variable "sg_tags" {
     type = map(string)
   
 }
+
+variable "sg_port" {
+    type = list(number)
+  
+}
