@@ -14,7 +14,7 @@ resource "aws_instance" "ec2_webserver" {
 
   root_block_device {
     volume_size = var.root_volume["volume_size"]
-    volume_type = var.root_volume["volume.type"]
+    volume_type = var.root_volume["volume_type"]
     delete_on_termination = var.root_volume["delete_on_termination"]
     tags = {
         "Name"=var.server_tag["Name"]
