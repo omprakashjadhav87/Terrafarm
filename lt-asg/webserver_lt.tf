@@ -8,7 +8,6 @@ resource "aws_launch_template" "generic_lt" {
       name = var.iam_role
     }
     user_data = filebase64("${path.module}/${var.userdata_file}")
-  vpc_security_group_ids = [ aws_security_group.genericwebserver_sg.id, ]
 tag_specifications {
   
   resource_type = "instance"
@@ -32,6 +31,7 @@ block_device_mappings {
 
 network_interfaces {
   associate_carrier_ip_address = true
+  security_groups = [ aws_security_group.genericwebserver_sg.id, ]
 }
 
 }
