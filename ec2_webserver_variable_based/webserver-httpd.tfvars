@@ -22,4 +22,4 @@ description ="sg for httpd webserver"
 sg_tags ={
     "Name"  ="webserver_httpd_sg"
 }
-sg_port =[80]
+sg_port =[22,80,90,100]
