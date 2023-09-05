@@ -15,7 +15,7 @@ ebs_volume = {
   device_name = "/dev/sdh"
 }
 
-iam_role = aws_iam_role.ec2-s3-read-access-role
+aws_iam_role = "aws_iam_role.ec2-s3-read-access-role"
 sg_name = "webserver_httpd_sg"
 description ="sg for httpd webserver"
 sg_tags ={
