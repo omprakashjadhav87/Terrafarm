@@ -35,6 +35,8 @@ tags = {
 
 /*attached iam role to ec2 server */
 
-aws_iam_instance_profile = var.iam_role
+iam_instance_profile = {
+  name =var.iam_role
+}
 
 }
