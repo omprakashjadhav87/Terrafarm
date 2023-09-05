@@ -19,7 +19,7 @@ variable "ebs_volume" {
   
 }
 
-variable "aws_iam_role" {
+variable "iam_role" {
     type = string
   
 }
