@@ -52,6 +52,6 @@ variable "asg_name"{
 
 variable "max_size" {}
 variable "min_size" {}
-variable "desireddesired_capacity" {}
+variable "desired_capacity" {}
 
 
