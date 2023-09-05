@@ -19,3 +19,10 @@ sg_tags ={
     "Name"  ="webserver_httpd_sg"
 }
 sg_port =[22,80,90,100]
+
+/*var for asg */
+asg_name = "webserver_asg"
+
+max_size = 3
+min_size = 2
+desireddesired_capacity = 1

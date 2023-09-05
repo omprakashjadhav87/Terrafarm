@@ -44,3 +44,14 @@ variable "sg_port" {
     type = list(number)
   
 }
+
+/*var for asg.tf */
+variable "asg_name"{
+    type = string
+}
+
+variable "max_size" {}
+variable "min_size" {}
+variable "desireddesired_capacity" {}
+
+
