@@ -25,4 +25,4 @@ asg_name = "webserver_asg"
 
 max_size = 3
 min_size = 2
-desireddesired_capacity = 1
+desired_capacity = 1
