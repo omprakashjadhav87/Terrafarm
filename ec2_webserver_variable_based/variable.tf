@@ -19,7 +19,7 @@ variable "ebs_volume" {
   
 }
 
-variable "iam_role" {
+variable "IAM_role" {
     type = string
   
 }
