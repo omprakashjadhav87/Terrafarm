@@ -1,5 +1,5 @@
 resource "aws_security_group" "genericwebserver_sg" {
-    vpc_id = data.terraform_remote_state.vpc_details.outputs.ekrushi_dev_vpc_id
+    vpc_id = data.terraform_remote_state.vpc_details.outputs.aws_vpc.geniric_vpc.id
     name = var.sg_name
     description = var.description
     tags = {
@@ -32,7 +32,7 @@ resource "aws_security_group" "genericwebserver_sg" {
 
  dynamic "ingress" {
     for_each = var.sg_port
-    iterator = Rule_port
+    iterator = rule_port
     content {
       description  ="sg for httpd webserver${rule_port.value}"
         from_port = rule_port.value
