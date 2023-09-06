@@ -24,5 +24,5 @@ sg_port =[22,80,90,100]
 asg_name = "webserver_asg"
 
 max_size = 3
-min_size = 2
-desired_capacity = 1
+min_size = 1
+desired_capacity = 2
