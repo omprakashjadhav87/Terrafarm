@@ -10,5 +10,6 @@ data "terraform_remote_state" "vpc_details" {
       region = "us-east-1"
       profile = "default"
     }
-  
+
+ 
 }

@@ -8,11 +8,11 @@ description               = "allow httpd trafic"
 
 sg_port                 = [22,80,90,100]
 
-vpc_id                  = data.terraform_remote_state.vpc_details.ekrushi_dev_vpc_id
+vpc_id       = data.terraform_remote_state.vpc_details.outputs.ekrushi_dev_vpc_id
 
 lt_name = "webserver_httpd_lt"
 instance_type = "t2.micro"
-user_data = "${file("webserver_httpd.sh")}"      #webserver_httpd.sh#
+user_data = "${file("webserver_httpd.sh")}"      
 server_tag = {
   "Name"        = "web_httpd_server"
   "owner"       = "devops"
