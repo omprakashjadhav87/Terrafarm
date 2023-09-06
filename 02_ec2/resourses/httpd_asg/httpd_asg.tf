@@ -8,7 +8,7 @@ description               = "allow httpd trafic"
 
 sg_port                 = [22,80,90,100]
 
-vpc_id       = data.terraform_remote_state.vpc_details.outputs.vpc_id
+vpc_id       = data.terraform_remote_state.vpc_details.outputs.ekrushi_dev_vpc_id
 
 lt_name = "webserver_httpd_lt"
 instance_type = "t2.micro"
