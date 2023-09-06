@@ -8,7 +8,7 @@ variable "instance_type" {
     type = string
   
 }
-variable "user_data_file" {
+variable "user_data" {
     type = string
   
 }
