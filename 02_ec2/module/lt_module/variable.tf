@@ -35,7 +35,7 @@ variable "description" {
   
 }
 
-variable "sg_tags" {
+variable "sg_tag" {
     type = map(string)
   
 }
