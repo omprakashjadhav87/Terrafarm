@@ -47,13 +47,6 @@ variable "sg_port" {
 
 variable "vpc_id" {}
 
-/*var for asg.tf */
-variable "asg_name"{
-    type = string
-}
 
-variable "max_size" {}
-variable "min_size" {}
-variable "desired_capacity" {}
 
 
