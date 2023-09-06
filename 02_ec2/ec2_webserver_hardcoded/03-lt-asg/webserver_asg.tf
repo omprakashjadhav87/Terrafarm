@@ -12,21 +12,23 @@ resource "aws_autoscaling_group" "webserver_asg" {
 
     #}
 
-    mixed_instances_policy {
-      launch_template_specification {
-        launch_template_id =aws_launch_template.generic_lt.id
-        version ="$Latest"
-      }
-    }
-      override{
-        instance_type ="c4.large"
-        
-        }
-override{
-        instance_type ="c3.large"
-       
-        }
+ mixed_instances_policy {
+        launch_template {
+           launch_template_specification {
+              launch_template_id = aws_launch_template.generic_lt.id
+              version = "$Latest"
+           }
+           override {
+                instance_type     = "c4.large"
+           }
 
-    }
+            override {
+                instance_type     = "c3.large"
+            }
+    }      
+  }
+
+}
+
 
 
