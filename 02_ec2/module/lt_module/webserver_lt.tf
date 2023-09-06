@@ -7,7 +7,7 @@ resource "aws_launch_template" "generic_lt" {
     iam_instance_profile {
       name = var.iam_role
     }
-    user_data = filebase64("${path.module}/${var.userdata_file}")
+    user_data = base64encode(var.user_data)
 tag_specifications {
   
   resource_type = "instance"

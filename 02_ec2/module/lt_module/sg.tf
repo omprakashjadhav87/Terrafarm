@@ -1,9 +1,13 @@
+/* Create Security Groups */
+
 resource "aws_security_group" "genericwebserver_sg" {
     /*vpc_id = data.terraform_remote_state.vpc_details.outputs.ekrushi_dev_vpc_id*/
-    name = var.securitygroup_name
-    description = var.sg_description 
+
+    vpc_id = var.vpc_id
+    name = var.sg_name
+    description = var.description 
     tags = {
-        "Name" =var.sg_tags["Name"]
+        "Name" =var.sg_tag["Name"]
 
     }
   

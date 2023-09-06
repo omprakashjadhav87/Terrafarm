@@ -27,11 +27,11 @@ variable "iam_role" {
 
 /*variable for SG */
 
-variable "securitygroup_name" {
+variable "sg_name" {
     type = string
   
 }
-variable "sg_description" {
+variable "description" {
   
 }
 
@@ -44,6 +44,8 @@ variable "sg_port" {
     type = list(number)
   
 }
+
+variable "vpc_id" {}
 
 /*var for asg.tf */
 variable "asg_name"{
