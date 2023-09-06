@@ -2,7 +2,7 @@ module "httpd_sg_lt" {
     source               = "../../module/lt_module"
     sg_name               = "httpd_sg"
 description               = "allow httpd trafic"
-    sg_tags ={
+    sg_tag ={
         "Name" = "httpd_sg"
 }
 
