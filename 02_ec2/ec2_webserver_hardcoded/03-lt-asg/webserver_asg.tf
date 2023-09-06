@@ -17,7 +17,7 @@ resource "aws_autoscaling_group" "webserver_asg" {
         launch_template_id =aws_launch_template.generic_lt.id
         version ="$Latest"
       }
-
+    }
       override{
         instance_type ="c4.large"
         
@@ -28,6 +28,5 @@ override{
         }
 
     }
-}
 
 
